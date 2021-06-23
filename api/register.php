@@ -7,8 +7,8 @@ $mobile = $_POST['mobile'];
 $password = $_POST['password'];
 $cpassword = $_POST['cpassword'];
 $address = $_POST['address'];
-$image = $_FILES['name']['photo'];
-$tmp_name = $_FILES['tmp_name']['photo'];
+$image = $_FILES['photo']['name'];
+$tmp_name = $_FILES['photo']['tmp_name'];
 $role = $_POST['role'];
 
 if ($password == $cpassword) {
