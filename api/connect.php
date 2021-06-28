@@ -9,7 +9,6 @@ if ($connect)
 }
 else{
     echo "not connected!";
-<<<<<<< HEAD
 
 
 }
