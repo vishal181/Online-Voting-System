@@ -1,39 +1,29 @@
-body
-{
-   background-color: aqua;
-   text-align: center;
-   
+body {
+  background-color: aqua;
+  text-align: center;
 }
 
-#headersection
-{
-    padding: 5px;
+#headersection {
+  padding: 5px;
 }
-#headersection h1
-{
-    font-family: cursive;
+#headersection h1 {
+  font-family: cursive;
 }
-input{
-    border-radius: 5px;
-    padding: 10px;
+input {
+  border-radius: 5px;
+  padding: 10px;
 }
 
-#dropbox
-{
-    padding: 10px;
-    border-radius: 5px;
-    width: 12%;
-    
-
+#dropbox {
+  padding: 10px;
+  border-radius: 5px;
+  width: 12%;
 }
 
-
-#loginbtn{
-
-    padding: 5px;
-    font-size: 15px;
-    border-radius: 5px;
-    background-color:#3498db;
-    color: white;
-
+#loginbtn {
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
 }
