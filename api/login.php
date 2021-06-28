@@ -17,7 +17,7 @@ if (mysqli_num_rows($check)>0)
     $_SESSION['groupdata']=$groupdata;
     echo '
     <script>
-    window.location="../registrationfiles.dashboard.php";
+    window.location="../registrationfiles/dashboard.php";
     </script>
           ';
 }
