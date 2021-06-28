@@ -11,8 +11,6 @@ else{
     echo "not connected!";
 <<<<<<< HEAD
 
-=======
->>>>>>> d130c13 (naya wala)
 
 }
 ?>
