@@ -3,6 +3,9 @@ session_start();
 if (!isset($_SESSION['userdata'])) {
     header("location:../");
 }
+
+$userdata = $_SESSION['userdata'];
+
 ?>
 
 
@@ -40,19 +43,26 @@ if (!isset($_SESSION['userdata'])) {
         }
     </style>
 
-    <div id="headersection">
+    <div id="mainsection">
 
-        <button id="backbtn"> back</button>
-        <button id="logoutbtn">logout</button>
-        <h1>Online Voting System</h1>
+        <div id="headersection">
+            <button id="backbtn"> back</button>
+            <button id="logoutbtn">logout</button>
+            <h1>Online Voting System</h1>
+        </div>
 
-    </div>
+        <hr>
+        <div id="profile">
+            <img src="../uploads/<?php echo $userdata['photo'] ?>" height="280" width="200">
+            <b>Name:</b>
+            <b>Mobile:</b>
+            <b>Address:</b>
+            <b>Status:</b>
 
-    <hr>
-    <div id="profile">
-    </div>
+        </div>
 
-    <div id="group">
+        <div id="group">
+        </div>
     </div>
 
 </body>
