@@ -18,7 +18,7 @@ if (mysqli_num_rows($check) > 0) {
     <script>
     window.location="../registrationfiles/dashboard.php";
     </script>
-          ';
+          ';    
 } else {
       echo '
     <script>
