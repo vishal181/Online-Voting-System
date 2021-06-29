@@ -1,6 +1,7 @@
+<?php
 include("connect.php");
 
-<?php
+
 $name = $_POST['name'];
 $mobile = $_POST['mobile'];
 $password = $_POST['password'];
