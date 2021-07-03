@@ -54,10 +54,10 @@ $userdata = $_SESSION['userdata'];
         <hr>
         <div id="profile">
             <img src="../uploads/<?php echo $userdata['photo'] ?>" height="280" width="200">
-            <b>Name:</b>
-            <b>Mobile:</b>
-            <b>Address:</b>
-            <b>Status:</b>
+            <b>Name:</b> <br><br>
+            <b>Mobile:</b><br><br>
+            <b>Address:</b><br><br>
+            <b>Status:</b><br><br>
 
         </div>
 
