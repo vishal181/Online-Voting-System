@@ -44,20 +44,22 @@ $userdata = $_SESSION['userdata'];
     </style>
 
     <div id="mainsection">
+        <center>
 
-        <div id="headersection">
-            <button id="backbtn"> back</button>
-            <button id="logoutbtn">logout</button>
-            <h1>Online Voting System</h1>
-        </div>
+            <div id="headersection">
+                <button id="backbtn"> back</button>
+                <button id="logoutbtn">logout</button>
+                <h1>Online Voting System</h1>
+            </div>
+        </center>
 
         <hr>
         <div id="profile">
-            <img src="../uploads/<?php echo $userdata['photo'] ?>" height="280" width="200">
-            <b>Name:</b> <br><br>
-            <b>Mobile:</b><br><br>
-            <b>Address:</b><br><br>
-            <b>Status:</b><br><br>
+            <img src="../uploads/<?php echo $userdata['photo'] ?>" height="100" width="100"> <br>
+            <b>Name:</b> <?php echo $userdata['name']   ?> <br><br>
+            <b>Mobile:</b><?php echo $userdata['mobile']   ?><br><br>
+            <b>Address:</b><?php echo $userdata['address']   ?><br><br>
+            <b>Status:</b><?php echo $userdata['status']   ?><br><br>
 
         </div>
 
