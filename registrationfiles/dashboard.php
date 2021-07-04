@@ -91,7 +91,7 @@ $groupsdata = $_SESSION['groupsdata'];
         </center>
         <hr>
 
-        <div id="mainpanal">
+        
 
 
             <div id="profile">
@@ -129,7 +129,7 @@ $groupsdata = $_SESSION['groupsdata'];
 
                 ?>
             </div>
-        </div>
+        
 
     </div>
 
