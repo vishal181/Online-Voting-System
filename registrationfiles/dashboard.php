@@ -52,6 +52,7 @@ $groupsdata = $_SESSION['groupsdata'];
             width: 30%;
             padding: 20px;
             float: left;
+            text-align: left;
 
         }
 
@@ -61,9 +62,11 @@ $groupsdata = $_SESSION['groupsdata'];
             width: 60%;
             padding: 20px;
             float: right;
+            text-align: left;
 
         }
 
+        
 
         #votebtn {
             padding: 5px;
@@ -104,9 +107,9 @@ $groupsdata = $_SESSION['groupsdata'];
                 for ($i = 0; $i < count($groupsdata); $i++) {
             ?>
                     <div>
-                        <img style="float: right;" src="../uploads/<?php echo  $groupsdata[$i]['photo'] ?>" height="100" width="100"><br><br>
-                        <b style="float: left;">Group Name: </b><?php echo $groupsdata[$i]['name'] ?><br>
-                        <b style="float: left;">Votes: </b><?php echo $groupsdata[$i]['votes'] ?><br>
+                        <img style="float: right;" src="../uploads/<?php echo  $groupsdata[$i]['photo'] ?>" height="100" width="100"><br>
+                        <b>Group Name: </b><?php echo $groupsdata[$i]['name'] ?><br>
+                        <b>Votes: </b><?php echo $groupsdata[$i]['votes'] ?><br>
                         <form action="">
                             <input type="hidden" name="gvotes" value="<?php echo $groupsdata[$i]['votes'] ?>">
                             <input type="submit" name="votebtn" value="vote" id="votebtn">
