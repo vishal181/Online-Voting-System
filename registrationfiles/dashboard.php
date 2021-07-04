@@ -54,7 +54,7 @@ $groupsdata = $_SESSION['groupsdata'];
             background-color: white;
             width: 40%;
             padding: 20px;
-            float: right;
+            float: left;
 
         }
 
@@ -63,7 +63,7 @@ $groupsdata = $_SESSION['groupsdata'];
             background-color: white;
             width: 60%;
             padding: 20px;
-            float: left;
+            float: right;
 
         }
         #mainpanal{
