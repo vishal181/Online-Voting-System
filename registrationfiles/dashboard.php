@@ -6,6 +6,11 @@ if (!isset($_SESSION['userdata'])) {
 
 $userdata = $_SESSION['userdata'];
 $groupsdata = $_SESSION['groupsdata'];
+if ($userdata['status'] == 0) {
+    $status = '<b style="color:red">Not Voted</b>';
+} else {
+    $status = '<b style="color:green">Voted</b>';
+}
 
 ?>
 
@@ -32,6 +37,7 @@ $groupsdata = $_SESSION['groupsdata'];
             background-color: #3498db;
             color: white;
             float: left;
+            margin: 10px;
         }
 
         #logoutbtn {
@@ -42,6 +48,7 @@ $groupsdata = $_SESSION['groupsdata'];
             color: white;
             float: right;
             padding: 5px;
+            margin: 10px;
 
 
         }
@@ -101,7 +108,7 @@ $groupsdata = $_SESSION['groupsdata'];
                 <b>Name:</b><?php echo $userdata['name']   ?> <br><br>
                 <b>Mobile:</b><?php echo $userdata['mobile']   ?><br><br>
                 <b>Address:</b><?php echo $userdata['address']   ?><br><br>
-                <b>Status:</b><?php echo $userdata['status']   ?><br><br>
+                <b>Status:</b><?php echo $status ?><br><br>
 
             </div>
 
@@ -116,8 +123,9 @@ $groupsdata = $_SESSION['groupsdata'];
                             <img style="float: right;" src="../uploads/<?php echo  $groupsdata[$i]['photo'] ?>" height="100" width="100"><br>
                             <b>Group Name: </b><?php echo $groupsdata[$i]['name'] ?><br><br>
                             <b>Votes: </b><?php echo $groupsdata[$i]['votes'] ?><br><br>
-                            <form action="">
+                            <form action="../api/vote.php" method="POST">
                                 <input type="hidden" name="gvotes" value="<?php echo $groupsdata[$i]['votes'] ?>">
+                                <input type="hidden" name="gid" value="<?php echo $groupsdata[$i]['id'] ?>">
                                 <input type="submit" name="votebtn" value="vote" id="votebtn">
 
                             </form>
