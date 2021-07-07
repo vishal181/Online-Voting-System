@@ -96,8 +96,8 @@ if ($_SESSION['userdata']['status'] == 0) {
         <center>
 
             <div id="headersection">
-                <button id="backbtn"> back</button>
-                <button id="logoutbtn">logout</button>
+                <a href="../"> <button id="backbtn"> back</button></a>
+                <a href="../api/logout.php"> <button id="logoutbtn"> logout</button></a>
                 <h1>Online Voting System</h1>
             </div>
         </center>

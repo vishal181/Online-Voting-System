@@ -21,6 +21,14 @@ if($update_votes and $update_user_status)
     $_SESSION['groupsdata']=$groupsdata;
 
 
+    echo '
+    <script>
+    alert("Voting Successful");
+    window.location="../registrationfiles/dashboard.php";
+    </script>
+    ';
+
+
 
 
 }
